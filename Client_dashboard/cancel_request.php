@@ -8,7 +8,7 @@ if (!isset($_SESSION['user_id'])) {
 }
 
 require_once __DIR__ . '/cnx/cnx.php'; // Inclure votre fichier de connexion à la base de données
-
+ 
 try {
     $conn = new PDO($dsn, DB_USER, DB_PASSWORD);
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
